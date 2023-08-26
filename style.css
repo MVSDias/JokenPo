@@ -1,0 +1,153 @@
+/*  https://source.unsplash.com/1600x900/?landscape */
+
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Caprasimo', cursive;
+}
+
+body {
+    background-image: url('https://source.unsplash.com/1600x900/?landscape');
+    background-size: cover;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    
+}
+.game {
+    background-color: antiquewhite;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 6px 6px 6px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+.boxButtons {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+    
+    
+    
+}
+
+#button {
+    cursor: pointer;
+    border: none;
+    font-size: 70px;
+    box-shadow: 6px 6px 6px rgb(61, 57, 57);
+}
+
+#button:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+}
+#button:active{
+    opacity: 0.5;
+}
+
+.buttonRock {
+    background-color: blueviolet;
+   
+   
+   
+}
+
+.buttonPaper {
+    background-color: chartreuse;
+    font-size: 70px;
+   
+}
+
+.buttonScissors {
+    background-color: rgb(248, 123, 127);
+    font-size: 70px;
+    width: 92.77px;
+   
+    
+}
+
+.alexaChoice {
+    color: red;
+    
+}
+
+
+
+
+.paragraph {
+    margin-top: 47px;
+    color: rgba(87, 87, 232, 0.934);
+    margin-bottom: 10px;
+    font-size: 20px;
+   
+}
+
+.whoWin {
+    text-align: center;
+   color: blue;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+p {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#myScore {
+    color: darkgreen;
+}
+
+#machineScore {
+    color: red;
+}
+
+
+/* responsividade */
+
+@media screen and (max-width: 420px) {
+    h1 {
+        font-size: 53px;
+    }
+
+}
+
+@media screen  and (max-width: 900px) and (orientation: landscape){
+
+    h1 {
+        font-size: 50px;
+    }
+
+    #button {
+        font-size: 45px;
+    }
+    .buttonScissors {
+        width: 57.77px;
+    }
+
+    .whoWin {
+        font-size: 21px;
+    }
+
+    .game {
+        padding: 0 40px
+    }
+}

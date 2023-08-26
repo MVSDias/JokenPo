@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>MeuJokenPô</title>
+</head>
+<body>
+    <main>
+
+       
+            <div class="game">
+                
+                <h1>JokenPô</h1>
+                
+                <div class="boxButtons">
+                    <button id="button" class="buttonRock" onclick="iPlay('rock')">&#x1F44A;</button>
+                    <button id="button" class="buttonPaper" onclick="iPlay('paper')">&#x1F590;</button>
+                    <button id="button" class="buttonScissors" onclick="iPlay('scissors')">&#x270C;</button>
+                </div>
+                <div class="paragraph">
+                    <p>Escolha da Alexa: <span class="alexaChoice"></span></p>
+                    <p class="whoWin" id="whoWin">...</p>
+                    <p class="myScore">Sua pontuação: <span id="myScore">0</span></p>
+                    <p class="machineScore">Alexa pontuação: <span id="machineScore">0</span></p>
+                </div>
+            </div>
+        
+
+    </main>
+    
+</body>
+<script src="./script.js"></script>
+</html>
